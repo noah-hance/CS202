@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 7 | CSS Grid</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            color:#fff;
+            font-size: 120%;
+            margin:0;
+            padding: 3em;
+        }
+        .color-1{
+            background-color: #22BBD4;
+        }
+        .color-2{
+            background-color: #2C6E78;
+        }
+        .grid{
+            display: grid;
+            /* grid-template-columns: 33.3% 33.3% 33.3%; */
+            /* grid-template-columns: 50% 50%; */
+            /* grid-template-rows: 200px 500px 100px; */
+            grid-auto-rows: auto;
+            grid-gap: 20px;
+
+            /* fractions - unit fr */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+            "header header header"
+            "nav main section"
+            "nav main section"
+            "nav article section"
+            "footer footer footer"
+        }
+        header{
+            grid-area: header;
+        }
+        nav{
+            grid-area: nav;
+        }
+        main{
+            grid-area: main;
+        }
+        article{
+            grid-area: article;
+        }
+        section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <header class="box color-1">
+                Header
+            </header><!-- header -->
+            <nav class="box color-2">
+                Navigations
+            </nav><!-- end of nav -->
+        
+            <main class="box color-1">
+                Main
+            </main>
+            <article class="box color-2">
+                Article
+            </article>
+            <section class="box color-1">
+                Section
+            </section>
+            <footer class="box color-2">
+                Footer
+            </footer>
+        </div><!-- end of grid -->
+    </div><!-- end of container -->
+</body>
+</html>

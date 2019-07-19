@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+:root{
+    --main-color:#05a081;
+    --text-color: #fff;
+}
+body{
+    font-family: 'Raleway', sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgba(0,0,0,0.8);
+    display:flex !important;
+    width:100%;
+    height:auto;
+}
+.logo{
+    flex: 1;
+    color:var(--text-color);
+    font-size: 40px;
+    padding: 18px;
+}
+.menu{
+    flex: 3;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    /* justify-content:space-between; */
+}
+.menu ul li{
+    flex:1;
+}
+.menu a{
+    color:var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+.showcase{
+    background-image: url(../images/showcase.jpg);
+    width:100%;
+    background-size: cover;
+}
+.showcase-text{
+    display: flex;
+    padding: 15% 0;
+}
+.showcase-text-items{
+    color:var(--text-color);
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+}
+.showcase-text-items h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.showcase-text-items p {
+    font-size: 18px;
+}
+main{
+    display: flex !important;
+    flex-wrap: wrap;
+    padding: 5% 0;
+}
+.main_1{
+    flex: 1;
+    padding: 3%;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.cards .card{
+    flex:0 0 250px;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.24) 0 1px 3px rgba(0,0,0,0.34);
+}
+.cards .card img{
+    max-width: 100%;
+}
+.card .text{
+    padding: 0 20px 20px;
+    text-align: center;
+}
+.button{
+    background: var(--main-color);
+    color:var(--text-color);
+    display:block;
+    width:100%;
+    padding:10px;
+    text-align: center;
+}
+.contact{
+    background: url(../images/subcribe.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+    padding: 80px 0;
+}
+.contact-items form, .contact-items h2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    z-index:-1;
+}
+.contact-items input[type="text"]{
+    border-radius: 0.5em;
+    margin-bottom: 15px;
+    width:50%;
+    padding:15px;
+}
+.contact-items textarea{
+    border-radius: 0.5em;
+    width:50%;
+    height: 150px;
+    padding:15px;
+}
+.contact-items h2{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+.button2{
+    background: var(--main-color);
+    width: 50%;
+    color:var(--text-color);
+    display: block;
+    outline: none;
+    border:0;
+    padding:0.5em;
+}

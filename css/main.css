@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+:root{
+    --main-color: #05a081;
+    --text-color:#fff;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif !important;}
+#showcase{
+    background-image: url(../showcase.jpg);
+    width: 100%;
+    background-size: cover;}
+/* header */
+header{
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    width: 100%;
+    height: auto;}
+.logo{
+    color:#fff;
+    flex: 1;
+    font-size: 40px;
+    padding: 18px;
+    text-transform: uppercase;}
+.menu{
+    flex:3;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    flex-flow: row wrap;}
+.menu ul li{
+    flex: 1;
+    text-align: center;}
+.menu a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;}
+/* showcase */
+.showcase-text{
+    display: flex;
+    padding:15% 0;}
+.showcase-text-items{
+    color:var(--text-color);
+    margin:auto;
+    text-align: center;
+    width: 50%;}
+.showcase-text-items h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;}
+.showcase-text-items p{
+    font-size: 18px;}
+/* main */
+main{
+    display: flex;
+    flex-flow: row wrap;
+    padding:5% 0;}
+.main_1{
+    flex: 1;
+    padding: 3%;
+    text-align: center;}
+
+/* contact */
+.contact{
+    background: url(../subcribe.jpg);
+    background-attachment: fixed;
+    padding: 80px 0;
+    position: relative;
+    z-index: 1; }
+
+.content-items{
+    display: flex;
+    align-items: center;
+    flex-direction: column;}
+
+.contact::before{
+    position: absolute;
+    content:'';
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.5);
+    z-index:-1;
+}
+.content-items h2{
+    color:#fff;
+    font-size: 40px;
+    margin-bottom: 18px;}
+.content-items input[type="text"]{
+    border-radius: 0.5em;
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 15px;}
+.content-items textarea{
+    border-radius: 0.5em;
+    height:150px;
+    padding:15px;
+    width: 50%;}
+.button{
+    background: var(--main-color);
+    border-radius: 0.5em;
+    width: 50%;
+    color:#fff;
+    display: block;
+    font-size: 25px;
+    margin-top:25px;
+    padding:0.5em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;}
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu ul{
+        flex-direction: column;
+        margin-top:0;
+    }
+    .menu ul li{
+        padding:5px;
+    }
+    .showcase-text-items{
+        width:100%;
+    }
+    .showcase-text-items h2{
+        font-size: 1.5em;
+    }
+    main{
+        flex-direction: column;
+    }
+}
