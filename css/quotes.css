@@ -1,0 +1,48 @@
+/* variables */
+:root{
+    --main-color:#f15025;
+    --bg-color:#ced0ce;
+    --text-color:#fff;
+    --dark-color:#191716;
+}
+body{
+    background-color: var(--bg-color);
+    min-width: 100vh;
+    text-align: center;
+    padding:100px;
+}
+
+.container{
+    background-color: var(--text-color);
+    width:80vw;
+    padding:40px;
+    height: 55vh;
+    border-left: 3px solid var(--main-color);
+}
+.quote-text{
+    min-height: 20vh;
+}
+.container h1{
+    font-size: 50px;
+    text-align: left;
+}
+.container p{
+    text-transform: capitalize;
+    color:var(--bg-color);
+    text-align: right;
+    font-style: italic;
+    font-size: 30px;
+}
+.btn{
+    margin-top:30px;
+    font-size: 25px;
+    padding:10px 20px;
+    background-color: var(--dark-color);
+    color:var(--main-color);
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.btn:hover{
+    color: var(--dark-color);
+    background-color: var(--main-color);
+}
