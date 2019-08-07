@@ -5,69 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Justice Banson</title>
+    <title>Lesson 4 | CSS Page Layout</title>
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
 </head>
 
 <body>
-    <!--Comments-->
-    <!--This is a heading-->
-    <h1 class="goodwill">Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>heading 5</h5>
-    <h6>Heading 6</h6>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/nuno.png" alt="This is a logo">
+            </div><!-- end of logo -->
 
-    <!-- paragraph -->
-    <p>
-        Lorem ipsum dolor<b> sit amet consectetur</b> adipisicing elit.<strong> Natus non,</strong> ad quibusdam aliquid
-        dicta<i> culpa expedita </i>nisi minus quod sint veritatis<em> eos vel</em> dolorem eius dignissimos possimus
-        reiciendis, ut ipsam?
-        <br>
-        <br>
-        Lorem <small>ipsum dolor </small>sit amet consectetur adipisicing<big> elit. Tenetur</big> at numquam fugiat
-        tempora ad,<u> aliquam in perferendis</u> magni fuga expedita animi recusandae excepturi eligendi blanditiis
-        facere repudiandae ab odio quia!
-    </p>
+            <nav>
+                <a href="lesson4.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-    <!-- Phrase Elements -->
-    <!-- 
-        <b>/<strong> - bold
-        <i>/<em> - italize
-        <small> -small
-        <big> - big
-        <u> - underline
-        
-     -->
-
-    <!-- list - ordered list, unordered list and description list -->
-
-    <ol>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ol>
-
-    <ul>
-        <li>item 4</li>
-        <li>item 5</li>
-        <li>item 6</li>
-    </ul>
-
-    <dl>
-        <dt>CSCI 102</dt>
-        <dd>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore amet eum porro adipisci deleniti optio
-            illum ullam cupiditate commodi explicabo nulla aperiam magnam numquam eligendi temporibus, itaque quisquam
-            sit eveniet.
-        </dd>
-        <dt>CSCI 202</dt>
-        <dd>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores assumenda magnam, quisquam repellat nobis
-            deserunt suscipit ullam. Dolores incidunt, perspiciatis magnam, ullam, at deleniti excepturi eligendi
-            pariatur dolorem delectus adipisci?
-        </dd>
-    </dl>
+        </div><!-- end of container -->
+    </header><!-- end of header -->
+    <div class="banner">
+        <div class="content">
+            <h2>Welcome To My Website</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <a href="#">Read More</a>
+        </div><!-- end of content -->
+    </div><!-- end of banner -->
+    <main>
+        <div class="container">
+            <section class="about">
+                <h3>About Nuno Website Design</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore laboriosam corrupti ratione
+                    voluptatum, asperiores deserunt quaerat tenetur sit sunt animi minima ad eveniet soluta iusto minus
+                    eos aut nostrum quidem?
+                </p>
+            </section><!-- end of about section -->
+        </div><!-- end of container -->
+        <section class="features">
+            <div class="container">
+                <h3>FEATURES</h3>
+                <hr>
+                <div class="box">
+                    <i class="fas fa-code"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officia perspiciatis magnam!
+                    </p>
+                </div><!-- end of box -->
+                <div class="box">
+                    <i class="fas fa-cloud"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officia perspiciatis magnam!
+                    </p>
+                </div><!-- end of box -->
+                <div class="box">
+                    <i class="fas fa-user-shield"></i>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit officia perspiciatis magnam!
+                    </p>
+                </div><!-- end of box -->
+            </div><!-- end of container -->
+        </section><!-- end of features section -->
+        <div class="showimage">
+            <div class="dark">
+                <div class="container">
+                    <h3>BUILT WITH CARE</h3>
+                    <div class="show">
+                        <h3>HTML 5</h3>
+                        <i class="fas fa-code"></i>
+                        <p>
+                            Built with the latest, HTML 5
+                        </p>
+                    </div><!-- end of show -->
+                    <div class="show">
+                        <h3>HTML 5</h3>
+                        <i class="fab fa-css3"></i>
+                        <p>
+                            Built with the latest, HTML 5
+                        </p>
+                    </div><!-- end of show -->
+                    <div class="show">
+                        <h3>HTML 5</h3>
+                        <i class="fab fa-js"></i>
+                        <p>
+                            Built with the latest, HTML 5
+                        </p>
+                    </div><!-- end of show -->
+                </div><!-- end container -->
+            </div>
+        </div><!-- end of showimage -->
+    </main><!-- end of main -->
+    <footer>
+        <div class="container">
+            Copyright <i class="fas fa-copyright"></i> All Right Reserved
+        </div>
+    </footer>
 </body>
 
 </html>

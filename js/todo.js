@@ -10,6 +10,7 @@ const generateTemplate = todo => {
     `;
 
     list.innerHTML += html;
+    /* comments */
 }
 
 addForm.addEventListener('submit', e => {
